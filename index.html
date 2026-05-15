@@ -11,105 +11,155 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <div class="grid-glow"></div>
-      <header class="topbar">
-        <div class="brand-mark">
-          <span class="brand-dot"></span>
-          <span>NOETIA Digital Solutions</span>
+    <div class="frame">
+      <header class="masthead">
+        <div class="brand-block">
+          <p class="meta-line">NOETIA / digital systems / pre-launch build</p>
+          <div class="brand-row">
+            <span class="brand-index">01</span>
+            <span class="brand-name">NOETIA Digital Solutions</span>
+          </div>
         </div>
-        <div class="status-pill">AI-native web engineering</div>
+        <nav class="utility-nav" aria-label="Section navigation">
+          <a href="#method">Method</a>
+          <a href="#stack">Patterns</a>
+          <a href="mailto:hello@noetia.digital">Contact</a>
+        </nav>
       </header>
 
-      <main class="hero-layout">
-        <section class="hero-copy">
-          <p class="eyebrow">COMING SOON</p>
-          <h1>Technical websites and products, built with modern AI engineering discipline.</h1>
-          <p class="lede">
-            NOETIA Digital Solutions is an AI-driven web development agency focused on shipping
-            reliable digital systems — not vibe-coded prototypes. We combine spec-driven
-            development, test-driven workflows, and production-aware automation to turn ideas into
-            maintainable products.
-          </p>
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="section-kicker">Coming soon. Built deliberately.</p>
+            <h1>AI-native web delivery for teams that want rigor, not theater.</h1>
+            <p class="hero-text">
+              NOETIA Digital Solutions builds technical websites, internal tools, and product
+              systems using spec-driven development, test-first validation, and structured AI
+              delivery workflows. The goal is simple: faster execution without lowering the
+              engineering bar.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:hello@noetia.digital"
+                >Request early access</a
+              >
+              <a class="button button-secondary" href="#method">Review the method</a>
+            </div>
+          </div>
 
-          <div class="cta-row">
-            <a class="button primary" href="mailto:hello@noetia.digital">Request early access</a>
-            <a class="button secondary" href="#framework">See the framework</a>
+          <aside class="signal-panel" aria-label="Delivery model preview">
+            <div class="signal-head">
+              <span>launch profile</span>
+              <span>rev. 0.2</span>
+            </div>
+            <div class="signal-grid">
+              <div>
+                <span class="signal-label">Primary mode</span>
+                <strong>spec &rarr; tasks &rarr; code &rarr; verification</strong>
+              </div>
+              <div>
+                <span class="signal-label">Quality gates</span>
+                <strong>typed contracts, tests, CI, human review</strong>
+              </div>
+              <div>
+                <span class="signal-label">Agent posture</span>
+                <strong>autonomous where safe, supervised where it matters</strong>
+              </div>
+              <div>
+                <span class="signal-label">Output</span>
+                <strong>maintainable systems with production intent</strong>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="method" id="method">
+          <div class="section-heading">
+            <p class="section-kicker">Delivery model</p>
+            <h2>Less prompt theater. More engineering structure.</h2>
+          </div>
+          <div class="method-grid">
+            <article class="method-card">
+              <span class="card-number">01</span>
+              <h3>Spec-driven development</h3>
+              <p>
+                Features start as requirements, acceptance criteria, interface contracts, and
+                explicit constraints. AI is used to accelerate implementation against a clear
+                target, not to invent one mid-flight.
+              </p>
+            </article>
+            <article class="method-card">
+              <span class="card-number">02</span>
+              <h3>Test-driven delivery</h3>
+              <p>
+                Confidence comes from executable checks: regression suites, typed boundaries,
+                contract validation, and CI gates before release. We prefer measurable correctness
+                over persuasive demos.
+              </p>
+            </article>
+            <article class="method-card">
+              <span class="card-number">03</span>
+              <h3>AI coding patterns that scale</h3>
+              <p>
+                Reusable context packs, prompt contracts, review loops, scoped agents, and
+                verification stages let AI stay useful inside a disciplined delivery system.
+              </p>
+            </article>
           </div>
         </section>
 
-        <aside class="signal-card">
-          <div class="terminal-head">
-            <span></span><span></span><span></span>
+        <section class="stack" id="stack">
+          <div class="section-heading">
+            <p class="section-kicker">Patterns in practice</p>
+            <h2>Designed around repeatability, traceability, and real shipping pressure.</h2>
           </div>
-          <div class="terminal-body">
-            <div><span class="prompt">$</span> delivery-mode --default</div>
-            <div class="accent">spec &gt; prompt</div>
-            <div>tests before merge</div>
-            <div>agents with guardrails</div>
-            <div>observability from day one</div>
-            <div>shipping soon…</div>
+          <div class="stack-layout">
+            <div class="stack-list" role="list" aria-label="Capabilities">
+              <div class="stack-item" role="listitem">
+                <span>01</span>
+                <p>PRD to implementation plans with clear task decomposition</p>
+              </div>
+              <div class="stack-item" role="listitem">
+                <span>02</span>
+                <p>Contract-first APIs and framework-aware frontend architecture</p>
+              </div>
+              <div class="stack-item" role="listitem">
+                <span>03</span>
+                <p>Prompt templates and context isolation for predictable agent output</p>
+              </div>
+              <div class="stack-item" role="listitem">
+                <span>04</span>
+                <p>Review automation, CI verification, and release-readiness checks</p>
+              </div>
+              <div class="stack-item" role="listitem">
+                <span>05</span>
+                <p>Human judgment retained for architecture, quality, and product risk</p>
+              </div>
+            </div>
+            <div class="note-panel">
+              <p class="note-caption">Working principle</p>
+              <p>
+                The modern stack is not just code generation. It is specification quality, context
+                discipline, deterministic validation, and careful handoff between autonomous tools
+                and human reviewers.
+              </p>
+              <p>
+                That is the operating model behind NOETIA: AI-native, technically grounded, and
+                built for products that need to survive contact with production.
+              </p>
+            </div>
           </div>
-        </aside>
+        </section>
       </main>
 
-      <section class="principles" id="framework">
-        <article class="card">
-          <p class="card-label">01</p>
-          <h2>Spec-driven development</h2>
-          <p>
-            Every build starts with explicit requirements, acceptance criteria, and interface
-            contracts. Prompts don’t replace specs — they operationalize them.
-          </p>
-        </article>
-        <article class="card">
-          <p class="card-label">02</p>
-          <h2>Test-driven delivery</h2>
-          <p>
-            We prefer executable confidence: regression tests, typed boundaries, CI checks, and
-            deterministic validation before production rollout.
-          </p>
-        </article>
-        <article class="card">
-          <p class="card-label">03</p>
-          <h2>AI coding patterns that scale</h2>
-          <p>
-            Structured prompting, agent orchestration, code review loops, context isolation,
-            verification gates, and framework-aware scaffolding — built for repeatability, not
-            demo theater.
-          </p>
-        </article>
-      </section>
-
-      <section class="capabilities">
-        <div class="capability-copy">
-          <p class="eyebrow muted">ENGINEERING PATTERNS</p>
-          <h2>Built around modern delivery systems.</h2>
-          <p>
-            We design AI-assisted product workflows around reproducibility, traceability, and fast
-            iteration. That means better docs, clearer system boundaries, stronger feedback loops,
-            and less fragile output.
-          </p>
-        </div>
-        <div class="capability-list">
-          <div class="mini-card">PRD → spec → tasks → implementation</div>
-          <div class="mini-card">Prompt contracts and reusable context packs</div>
-          <div class="mini-card">TDD / BDD / contract-first APIs</div>
-          <div class="mini-card">CI validation and review automation</div>
-          <div class="mini-card">Design systems with production-ready frontend stacks</div>
-          <div class="mini-card">Human oversight where quality actually matters</div>
-        </div>
-      </section>
-
       <footer class="footer">
-        <p>NOETIA Digital Solutions — launching soon.</p>
-        <p class="footer-note">Built for teams who want AI leverage with engineering rigor.</p>
+        <p>NOETIA Digital Solutions / launch pending</p>
+        <p>For early projects and partnerships: <a href="mailto:hello@noetia.digital">hello@noetia.digital</a></p>
       </footer>
     </div>
   </body>
