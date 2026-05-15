@@ -1,15 +1,16 @@
 :root {
   --bg: #f6f2ea;
   --bg-2: #fcfaf5;
-  --surface: rgba(255, 253, 249, 0.86);
+  --surface: rgba(255, 253, 249, 0.88);
   --surface-strong: rgba(255, 253, 249, 0.96);
+  --card: rgba(255, 252, 247, 0.68);
   --ink: #181714;
-  --muted: #6d665b;
-  --line: rgba(24, 23, 20, 0.09);
-  --line-strong: rgba(24, 23, 20, 0.14);
-  --accent: #315f63;
-  --accent-soft: rgba(49, 95, 99, 0.06);
-  --shadow: 0 24px 64px rgba(48, 38, 24, 0.06);
+  --muted: #6f685d;
+  --line: rgba(24, 23, 20, 0.085);
+  --line-strong: rgba(24, 23, 20, 0.12);
+  --accent: #3a6668;
+  --accent-soft: rgba(58, 102, 104, 0.05);
+  --shadow: 0 24px 64px rgba(48, 38, 24, 0.055);
 }
 
 * {
@@ -208,19 +209,19 @@ p {
 }
 
 h1 {
-  max-width: 10.5ch;
-  margin-bottom: 26px;
+  max-width: 10.8ch;
+  margin-bottom: 28px;
   font-size: clamp(3.25rem, 6.2vw, 6rem);
-  line-height: 0.94;
-  letter-spacing: -0.07em;
+  line-height: 0.98;
+  letter-spacing: -0.06em;
 }
 
 h2 {
   max-width: 15ch;
   margin-bottom: 0;
   font-size: clamp(1.95rem, 3vw, 3.05rem);
-  line-height: 1.02;
-  letter-spacing: -0.052em;
+  line-height: 1.06;
+  letter-spacing: -0.045em;
 }
 
 h3 {
@@ -258,12 +259,17 @@ h3 {
 .hero-text {
   max-width: 60ch;
   font-size: 1.04rem;
+  line-height: 1.78;
 }
 
 .hero-text-strong {
   max-width: 56ch;
   font-size: 1.11rem;
   color: #2c2821;
+}
+
+.hero-copy > .section-kicker {
+  margin-bottom: 18px;
 }
 
 .hero-actions {
@@ -297,7 +303,7 @@ h3 {
 }
 
 .button-primary {
-  background: rgba(24, 23, 20, 0.94);
+  background: rgba(24, 23, 20, 0.92);
   color: #fff;
 }
 
@@ -309,7 +315,7 @@ h3 {
 
 .button-secondary {
   color: var(--ink);
-  background: rgba(255, 253, 249, 0.62);
+  background: var(--card);
 }
 
 .signal-panel,
@@ -318,7 +324,7 @@ h3 {
 .note-panel,
 .stack-list {
   border: 1px solid var(--line);
-  background: rgba(255, 253, 249, 0.56);
+  background: var(--card);
 }
 
 .signal-panel {
@@ -327,10 +333,10 @@ h3 {
 }
 
 .signal-panel-featured {
-  background: rgba(27, 31, 37, 0.95);
+  background: rgba(29, 33, 39, 0.96);
   border-color: rgba(255, 255, 255, 0.08);
   color: #f5f1e8;
-  box-shadow: 0 14px 28px rgba(24, 23, 20, 0.1);
+  box-shadow: 0 14px 28px rgba(24, 23, 20, 0.08);
 }
 
 .signal-panel-featured .signal-head,
@@ -406,7 +412,7 @@ h3 {
 .value-card,
 .method-card,
 .note-panel {
-  padding: 28px;
+  padding: 30px;
 }
 
 .value-card,
@@ -415,7 +421,7 @@ h3 {
 }
 
 .value-card-highlight {
-  background: rgba(30, 95, 101, 0.06);
+  background: var(--card);
 }
 
 .card-number {
@@ -435,7 +441,7 @@ h3 {
   display: grid;
   grid-template-columns: 38px 1fr;
   gap: 14px;
-  padding: 20px 22px;
+  padding: 22px 24px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -454,7 +460,7 @@ h3 {
 }
 
 .note-panel-emphasis {
-  background: rgba(252, 248, 241, 0.8);
+  background: var(--card);
 }
 
 .note-panel p + p {
